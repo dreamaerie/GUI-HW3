@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Responsive Multiplication Table</title>
+    <meta charset="utf-8">
+    <link href="css/table.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Responsive Multiplication Table</h1>
+    <p>
+        Please input values between -200 to 200
+    </p>
+    <div class="uiContainer">
+        <div class="uiCol">
+            <form>
+                <label for="min_col">Minimum Column value: </label>
+                <input type="text" id="min_col" name="min_col" value="1"><br>
+                <label for="max_col">Maximum Column value: </label>
+                <input type="text" id="max_col" name="max_col" value="12"><br>
+                <label for="min_col">Minimum Row value: </label>
+                <input type="text" id="min_row" name="min_row" value="1"><br>
+                <label for="min_col">Maximum Row value: </label>
+                <input type="text" id="max_row" name="max_row" value="12"><br>
+                <button type="button" id="submit">Submit</button>
+            </form>
+        </div>
+        <div class="uiCol">
+            <div class="errorContainer">
+                <error id="error_msg"></error>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div id="tableHolder"></div>
+    <!-- <table id="theTable">
+            <tr> 
+                <td id="col_output">
+                    <tr id="row_output"></tr>  
+                </td>
+            </tr>
+    </table> -->
+
+    <script src="js/table.js"></script>
+</body>
+
+
+</html>
